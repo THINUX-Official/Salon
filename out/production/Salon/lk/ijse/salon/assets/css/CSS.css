@@ -1,0 +1,95 @@
+.top_pane_background_color{
+    -fx-background-color: #ffffff;
+}
+
+.pane_background_color{
+    -fx-background-color: #ffffff;
+}
+
+.rectangle{
+    -fx-background-radius: 50px;
+    -fx-background-color: linear-gradient(to right bottom , #c99da3, #713e5a, #331e36);
+}
+
+.button_colour {
+    -fx-background-color: linear-gradient(to bottom, #00ffff, #0000ff);
+    -fx-background-radius: 10px;
+}
+
+.tab_button {
+    -fx-background-color: #713e5a;
+    -fx-background-radius: 10px;
+    -fx-font : 36px "Aharoni";
+}
+
+.sub_tab_button {
+    -fx-background-color: #c99da3;
+    -fx-background-radius: 10px;
+    -fx-font : 36px "Aharoni";
+}
+
+.login_button_colour {
+    -fx-background-color: linear-gradient(to bottom, #24a0ed, #24a0ed);
+    -fx-background-radius: 10px;
+}
+
+.default_button{
+    -fx-background-color: #d7dadd;
+    -fx-background-radius: 10px;
+}
+
+.primary_button{
+    -fx-background-color: #044cd0;
+    -fx-background-radius: 10px;
+}
+
+.danger_button{
+    -fx-background-color:#d72503;
+    -fx-background-radius: 10px;
+}
+
+.secondary_button{
+    -fx-background-color: #7a8793;
+    -fx-background-radius: 10px;
+}
+
+.success_button{
+    -fx-background-color: #1fae51;
+    -fx-background-radius: 10px;
+}
+
+.info_button{
+    -fx-background-color: #09aeae;
+    -fx-background-radius: 10px;
+}
+
+.warning_button{
+    -fx-background-color: #e6bc15;
+    -fx-background-radius: 10px;
+}
+
+.dark_button{
+    -fx-background-color: #23272b;
+    -fx-background-radius: 10px;
+}
+
+.text_field{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+.title-text {
+    -fx-font : 36px "Brush Script MT";
+}
+
+.left_tab_border:hover{
+    -fx-background-color: #331e36;
+    -fx-border-color: #c99da3;
+    -fx-border-width: 0px 0px 0px 6px;
+}
+
+.left_sub_tab_border:hover{
+    -fx-background-color: #331e36;
+    -fx-border-color: #c99da3;
+    -fx-border-width: 0px 0px 6px 0px;
+}

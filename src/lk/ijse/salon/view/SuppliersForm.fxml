@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.SuppliersFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Suppliers">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="1338.0" layoutY="290.0" onAction="#addOnAction" prefWidth="150.0" styleClass="primary_button" stylesheets="@../assets/css/CSS.css" text="ADD" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1168.0" layoutY="994.0" onAction="#deleteOnAction" prefWidth="150.0" styleClass="danger_button" stylesheets="@../assets/css/CSS.css" text="DELETE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1338.0" layoutY="994.0" onAction="#updateOnAction" prefWidth="150.0" styleClass="secondary_button" stylesheets="@../assets/css/CSS.css" text="UPDATE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXTextField fx:id="txtSID" layoutX="20.0" layoutY="118.0" onKeyReleased="#txtSIDKeyTypeOnAction" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="20.0" layoutY="88.0" prefWidth="725.0" text="SID">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtName" layoutX="763.0" layoutY="118.0" onKeyReleased="#txtNameKeyTypeOnAction" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="763.0" layoutY="88.0" prefWidth="725.0" text="Name">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtAddress" layoutX="20.0" layoutY="219.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="20.0" layoutY="189.0" prefWidth="725.0" text="Address">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtContact" layoutX="763.0" layoutY="219.0" onKeyReleased="#txtContactKeyTypeOnAction" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="763.0" layoutY="189.0" prefWidth="725.0" text="Contact">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtSearch" layoutX="763.0" layoutY="386.0" onAction="#txtSearchOnAction" prefWidth="725.0" promptText="SID / Name / Address / Contact">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXTextField>
+   <Label layoutX="763.0" layoutY="356.0" prefWidth="725.0" text="Search">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="tblSupplier" layoutX="20.0" layoutY="444.0" prefHeight="530.0" prefWidth="1468.0">
+      <columns>
+         <TableColumn fx:id="colSID" prefWidth="100.0" resizable="false" text="SID" />
+         <TableColumn fx:id="colName" prefWidth="505.0000305175781" resizable="false" text="Name" />
+         <TableColumn fx:id="colAddress" prefWidth="640.0" resizable="false" text="Address" />
+         <TableColumn fx:id="colContact" prefWidth="223.0" resizable="false" text="Contact" />
+      </columns>
+   </TableView>
+   <JFXButton layoutX="20.0" layoutY="994.0" onAction="#orderOnAction" prefWidth="150.0" styleClass="warning_button" stylesheets="@../assets/css/CSS.css" text="+ORDER" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label fx:id="lblSID" layoutX="20.0" layoutY="157.0" prefWidth="725.0" textFill="RED" />
+   <Label fx:id="lblName" layoutX="763.0" layoutY="157.0" prefWidth="725.0" textFill="RED" />
+   <Label fx:id="lblContact" layoutX="763.0" layoutY="258.0" prefWidth="725.0" textFill="RED" />
+</AnchorPane>

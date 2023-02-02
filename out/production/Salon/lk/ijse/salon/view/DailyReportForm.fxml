@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.DailyReportFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Daily Report ">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <TableView layoutX="20.0" layoutY="117.0" prefHeight="857.0" prefWidth="1468.0">
+      <columns>
+         <TableColumn minWidth="150.0" text="Time" />
+         <TableColumn minWidth="100.0" text="ID" />
+         <TableColumn minWidth="400.0" prefWidth="942.0" text="Description" />
+         <TableColumn minWidth="220.0" prefWidth="278.0" text="cost" />
+      </columns>
+   </TableView>
+   <Label layoutX="910.0" layoutY="30.0" prefHeight="30.0" prefWidth="100.0" text="Date:">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblDate" layoutX="1010.0" layoutY="30.0" prefHeight="30.0" prefWidth="225.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblTime" layoutX="1010.0" layoutY="69.0" prefHeight="30.0" prefWidth="225.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="964.0" layoutY="994.0" prefHeight="30.0" prefWidth="225.0" text="Total Profit or Loss :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblDate1" layoutX="1189.0" layoutY="994.0" prefHeight="30.0" prefWidth="300.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>

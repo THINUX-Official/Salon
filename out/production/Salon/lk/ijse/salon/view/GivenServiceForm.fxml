@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.GivenServiceFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Given Service">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="1311.0" layoutY="266.0" onAction="#addToCartOnAction" prefHeight="46.0" prefWidth="175.0" styleClass="success_button" stylesheets="@../assets/css/CSS.css" text="+Add to cart" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1168.0" layoutY="994.0" onAction="#deleteOnAction" prefWidth="150.0" styleClass="danger_button" stylesheets="@../assets/css/CSS.css" text="DELETE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1338.0" layoutY="994.0" onAction="#updateOnAction" prefWidth="150.0" styleClass="secondary_button" stylesheets="@../assets/css/CSS.css" text="UPDATE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label layoutX="20.0" layoutY="88.0" prefWidth="100.0" text="OID :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="460.0" layoutY="148.0" prefHeight="30.0" prefWidth="200.0" text="Customer Name :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="tblServiceOrders" layoutX="20.0" layoutY="331.0" prefHeight="644.0" prefWidth="1468.0">
+      <columns>
+         <TableColumn fx:id="colSerID" prefWidth="100.0" resizable="false" text="SerID" />
+         <TableColumn fx:id="colCID" prefWidth="100.0" resizable="false" text="CID" />
+         <TableColumn fx:id="colDesc" prefWidth="930.0" resizable="false" text="Description" />
+         <TableColumn fx:id="colPrice" prefWidth="337.0" resizable="false" text="Price" />
+      </columns>
+   </TableView>
+   <JFXComboBox fx:id="cmbCID" layoutX="120.0" layoutY="148.0" onAction="#cmbCIDOnAction" prefHeight="30.0" prefWidth="150.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></JFXComboBox>
+   <Label fx:id="lblOID" layoutX="120.0" layoutY="88.0" prefWidth="150.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="20.0" layoutY="148.0" prefWidth="100.0" text="CID">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="290.0" layoutY="141.0" onAction="#newCustomerOnAction" prefWidth="150.0" styleClass="primary_button" stylesheets="@../assets/css/CSS.css" text="+NEW" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXComboBox fx:id="cmbSerID" layoutX="120.0" layoutY="213.0" onAction="#cmbSerIDOnAction" prefHeight="30.0" prefWidth="150.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></JFXComboBox>
+   <Label layoutX="20.0" layoutY="213.0" prefWidth="100.0" text="SerID">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="290.0" layoutY="213.0" prefHeight="30.0" prefWidth="140.0" text="Description :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblDesc" layoutX="430.0" layoutY="213.0" prefHeight="30.0" prefWidth="631.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="1186.0" layoutY="213.0" prefHeight="30.0" prefWidth="150.0" text="Price :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblPrice" layoutX="1336.0" layoutY="213.0" prefHeight="30.0" prefWidth="150.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="850.0" layoutY="20.0" prefHeight="30.0" prefWidth="150.0" text="Date &amp; Time:">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblDate" layoutX="1000.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblTime" layoutX="1000.0" layoutY="57.0" prefHeight="30.0" prefWidth="200.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="773.0" layoutY="1002.0" prefHeight="30.0" prefWidth="75.0" text="Total :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblTotal" layoutX="848.0" layoutY="1002.0" prefHeight="30.0" prefWidth="300.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="20.0" layoutY="994.0" onAction="#placeOrderOnAction" prefWidth="185.0" styleClass="warning_button" stylesheets="@../assets/css/CSS.css" text="+Place Order" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXTextField fx:id="txtCustName" layoutX="660.0" layoutY="148.0" prefHeight="31.0" prefWidth="400.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.SalaryFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Salaries">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="1338.0" layoutY="288.0" onAction="#payOnAction" prefWidth="150.0" styleClass="warning_button" stylesheets="@../assets/css/CSS.css" text="PAY" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1168.0" layoutY="994.0" onAction="#deleteOnAction" prefWidth="150.0" styleClass="danger_button" stylesheets="@../assets/css/CSS.css" text="DELETE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1338.0" layoutY="994.0" onAction="#updateOnAction" prefWidth="150.0" styleClass="secondary_button" stylesheets="@../assets/css/CSS.css" text="UPDATE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label layoutX="20.0" layoutY="88.0" prefWidth="100.0" text="EID :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="764.0" layoutY="88.0" prefWidth="725.0" text="Name :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="764.0" layoutY="187.0" prefWidth="725.0" text="Date :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtCost" layoutX="14.0" layoutY="217.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="14.0" layoutY="187.0" prefWidth="725.0" text="Cost">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtSearch" layoutX="764.0" layoutY="384.0" prefWidth="725.0" promptText="Name">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="764.0" layoutY="354.0" prefWidth="725.0" text="Search">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="tableSalary" layoutX="20.0" layoutY="443.0" prefHeight="531.0" prefWidth="1468.0">
+      <columns>
+         <TableColumn fx:id="colEID" prefWidth="100.0" resizable="false" text="EID" />
+         <TableColumn fx:id="colName" prefWidth="610.0000305175781" resizable="false" text="Name" />
+         <TableColumn fx:id="colDate" prefWidth="446.0" resizable="false" text="Date" />
+         <TableColumn fx:id="colCost" prefWidth="311.0" resizable="false" text="Cost" />
+      </columns>
+   </TableView>
+   <JFXComboBox fx:id="cmbEID" layoutX="120.0" layoutY="88.0" onAction="#cmbEIDOnAction" prefHeight="30.0" prefWidth="150.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></JFXComboBox>
+   <JFXTextField fx:id="txtDate" layoutX="764.0" layoutY="217.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <JFXTextField fx:id="txtEmpName" layoutX="764.0" layoutY="118.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+</AnchorPane>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="top_pane_background_color" stylesheets="@../assets/css/CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.MenuAdminFormController">
+   <AnchorPane fx:id="pane" layoutX="414.0" layoutY="10.0" prefHeight="1080.0" prefWidth="1507.0">
+      <children>
+         <ImageView fitHeight="371.0" fitWidth="300.0" layoutX="587.0" layoutY="268.0" nodeOrientation="INHERIT" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+            <effect>
+               <Reflection />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+               <Image url="@../assets/images/0f628166340c24fca9328c45b866adfc.jpg" />
+            </image>
+         </ImageView>
+         <Label fx:id="lblDate" layoutX="1051.0" layoutY="30.0" prefHeight="50.0" prefWidth="300.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="lblTime" layoutX="1051.0" layoutY="80.0" prefHeight="50.0" prefWidth="300.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="976.0" layoutY="30.0" prefHeight="50.0" prefWidth="55.0" text="Date">
+            <font>
+               <Font name="Aharoni Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="976.0" layoutY="80.0" prefHeight="50.0" prefWidth="55.0" text="Time">
+            <font>
+               <Font name="Aharoni Bold" size="24.0" />
+            </font>
+         </Label>
+         <Pane layoutX="237.0" layoutY="268.0" prefHeight="300.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 40px;">
+            <effect>
+               <DropShadow color="#838282" />
+            </effect>
+            <children>
+               <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="153.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../assets/icons/order.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="44.0" prefWidth="200.0" text="Orders">
+                  <font>
+                     <Font size="36.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblOrderCount" alignment="CENTER" layoutX="75.0" layoutY="160.0" prefHeight="52.0" prefWidth="200.0">
+                  <font>
+                     <Font name="Aharoni Bold" size="64.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <Pane layoutX="925.0" layoutY="268.0" prefHeight="300.0" prefWidth="350.0" style="-fx-background-radius: 40px; -fx-background-color: #FFFFFF;">
+            <effect>
+               <DropShadow color="#838282" />
+            </effect>
+            <children>
+               <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="153.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../assets/icons/product.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="44.0" prefWidth="200.0" text="Products">
+                  <font>
+                     <Font size="36.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblProductCount" alignment="CENTER" layoutX="75.0" layoutY="160.0" prefHeight="44.0" prefWidth="200.0">
+                  <font>
+                     <Font name="Aharoni Bold" size="64.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <Pane layoutX="237.0" layoutY="618.0" prefHeight="300.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 40px;">
+            <effect>
+               <DropShadow color="#838282" />
+            </effect>
+            <children>
+               <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="153.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../assets/icons/customers.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="44.0" prefWidth="200.0" text="Customers">
+                  <font>
+                     <Font size="36.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCustomerCount" alignment="CENTER" layoutX="75.0" layoutY="160.0" prefHeight="52.0" prefWidth="200.0">
+                  <font>
+                     <Font name="Aharoni Bold" size="64.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <Pane layoutX="925.0" layoutY="618.0" prefHeight="300.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 40px;">
+            <effect>
+               <DropShadow color="#838282" />
+            </effect>
+            <children>
+               <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="147.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../assets/icons/barber-chair.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="CENTER" layoutX="75.0" layoutY="107.0" prefHeight="44.0" prefWidth="200.0" text="Service">
+                  <font>
+                     <Font size="36.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblServiceCount" alignment="CENTER" layoutX="75.0" layoutY="160.0" prefHeight="52.0" prefWidth="200.0">
+                  <font>
+                     <Font name="Aharoni Bold" size="64.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <Label alignment="CENTER" layoutX="58.0" layoutY="124.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Salon Sudarma" textAlignment="CENTER" textFill="#331e36">
+            <font>
+               <Font name="Copperplate Gothic Light" size="96.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="58.0" layoutY="30.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Welcome to " textAlignment="CENTER" textFill="#331e36">
+            <font>
+               <Font name="Copperplate Gothic Light" size="48.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="991.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageEmployeesOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Employees" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="903.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageServicesOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Services" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="639.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageSuppliersOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Suppliers" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageCustomerOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Customers" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageProductOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Products" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageAppointmentOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Appointments" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label alignment="CENTER" layoutX="14.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="54.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="Admin Menu">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="550.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageCustomerOrderOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Orders" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="815.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageReportOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Reports" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="727.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#managePaymentOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Payments" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label layoutX="1662.0" layoutY="1049.0" text="© 2022 THINUX - All Rights Reserved" />
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/clock.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/product.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/customers.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/order.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/supplier.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="736.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/payments.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="824.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/general-ledger.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="912.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/barbershop.png" />
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="1000.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/human-resources.png" />
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#dashboardOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Dashboard" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/home.png" />
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageServiceOrderOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Service Order" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../assets/icons/barber-chair.png" />
+   </ImageView>
+   <JFXButton buttonType="RAISED" layoutX="1806.0" layoutY="14.0" onAction="#logoutOnAction" prefHeight="40.0" prefWidth="100.0" styleClass="dark_button" stylesheets="@../assets/css/CSS.css" text="Logout" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></JFXButton>
+</AnchorPane>

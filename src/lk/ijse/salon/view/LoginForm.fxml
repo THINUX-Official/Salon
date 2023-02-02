@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="top_pane_background_color" stylesheets="@../assets/css/CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.LoginFormController">
+   <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#f7bfd2" height="840.0" layoutX="1100.0" layoutY="120.0" width="700.0" />
+   <JFXTextField fx:id="txtUsername" focusColor="#044cd0" layoutX="1200.0" layoutY="437.0" prefHeight="50.0" prefWidth="500.0" promptText=" Enter Username" styleClass="text_field" stylesheets="@../assets/css/CSS.css" unFocusColor="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <JFXPasswordField fx:id="txtPassword" focusColor="#044cd0" layoutX="1200.0" layoutY="557.0" onAction="#loginEnterOnAction" prefHeight="50.0" prefWidth="500.0" promptText=" Enter Password" styleClass="text_field" stylesheets="@../assets/css/CSS.css" unFocusColor="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXPasswordField>
+   <JFXButton layoutX="1200.0" layoutY="657.0" onAction="#loginOnAction" prefHeight="40.0" prefWidth="500.0" styleClass="login_button_colour" stylesheets="@../assets/css/CSS.css" text="Login" textFill="WHITE">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font size="18.0" />
+      </font>
+   </JFXButton>
+   <JFXButton buttonType="RAISED" layoutX="1806.0" layoutY="14.0" onAction="#exitOnAction" prefHeight="40.0" prefWidth="100.0" styleClass="danger_button" stylesheets="@../assets/css/CSS.css" text="Exit" textFill="WHITE">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font size="18.0" />
+      </font></JFXButton>
+   <Label layoutX="1662.0" layoutY="1049.0" text="© 2022 THINUX - All Rights Reserved" />
+   <Label layoutX="1200.0" layoutY="407.0" prefHeight="30.0" prefWidth="178.0" text="Username">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="1200.0" layoutY="527.0" prefHeight="30.0" prefWidth="178.0" text="Password">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="483.0" fitWidth="380.0" layoutX="361.0" layoutY="248.0" nodeOrientation="INHERIT" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/images/0f628166340c24fca9328c45b866adfc.jpg" />
+      </image>
+      <effect>
+         <Reflection />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="OPEN_HAND" />
+      </cursor>
+   </ImageView>
+   <Label alignment="CENTER" layoutX="117.0" layoutY="148.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Salon Sudarma" textAlignment="CENTER" textFill="#331e36">
+      <font>
+         <Font name="Copperplate Gothic Light" size="96.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="117.0" layoutY="54.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Welcome to " textAlignment="CENTER" textFill="#331e36">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <Pane fx:id="facebook" layoutX="1285.0" layoutY="780.0" prefHeight="75.0" prefWidth="75.0">
+      <children>
+         <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/icons/facebook.png" />
+            </image>
+         </ImageView>
+         <JFXButton prefHeight="75.0" prefWidth="75.0" style="-fx-background-radius: 100%;" text=" " />
+      </children>
+   </Pane>
+   <Pane fx:id="google" layoutX="1406.0" layoutY="780.0" prefHeight="75.0" prefWidth="75.0">
+      <children>
+         <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/icons/google-logo.png" />
+            </image>
+         </ImageView>
+         <JFXButton prefHeight="75.0" prefWidth="75.0" style="-fx-background-radius: 100%;" text=" " />
+      </children>
+   </Pane>
+   <Pane fx:id="insta" layoutX="1540.0" layoutY="780.0" prefHeight="75.0" prefWidth="75.0">
+      <children>
+         <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../assets/icons/instagram-new.png" />
+            </image>
+         </ImageView>
+         <JFXButton prefHeight="75.0" prefWidth="75.0" style="-fx-background-radius: 100%;" text=" " />
+      </children>
+   </Pane>
+   <Circle fill="WHITE" layoutX="1445.0" layoutY="263.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" />
+   <ImageView fitHeight="150.0" fitWidth="119.0" layoutX="1379.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/images/0f628166340c24fca9328c45b866adfc.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>

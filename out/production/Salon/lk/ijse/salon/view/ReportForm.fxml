@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.ReportFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Reports">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="554.0" layoutY="604.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#monthlyReportOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Monthly Report" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="1004.0" layoutY="604.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#annualReportOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Annual Report" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="104.0" layoutY="604.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#dailyReportOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Daily Report" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="565.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1015.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="104.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#customerDetailsOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Customer Details" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="115.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="554.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#productDetailsOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Product Details" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="565.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="1004.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#supplierDetailsOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Supplier Details" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="sub_tab_button" />
+         <String fx:value="left_sub_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1015.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/general-ledger.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

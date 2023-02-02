@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1507.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.PaymentFormController">
+   <Label layoutX="20.0" layoutY="20.0" text="Payments">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton layoutX="1338.0" layoutY="289.0" onAction="#addOnAction" prefWidth="150.0" styleClass="primary_button" stylesheets="@../assets/css/CSS.css" text="ADD" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1166.0" layoutY="994.0" onAction="#deleteOnAction" prefWidth="150.0" styleClass="danger_button" stylesheets="@../assets/css/CSS.css" text="DELETE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton layoutX="1336.0" layoutY="994.0" onAction="#updateOnAction" prefWidth="150.0" styleClass="secondary_button" stylesheets="@../assets/css/CSS.css" text="UPDATE" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label layoutX="20.0" layoutY="88.0" prefWidth="100.0" text="PID :">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtDesc" layoutX="764.0" layoutY="118.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="764.0" layoutY="88.0" prefWidth="725.0" text="Description">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtDate" layoutX="20.0" layoutY="219.0" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="20.0" layoutY="189.0" prefWidth="725.0" text="Date">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtCost" layoutX="764.0" layoutY="219.0" onKeyReleased="#txtCostKeyTypeOnAction" prefWidth="725.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="764.0" layoutY="189.0" prefWidth="725.0" text="Cost">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <JFXTextField fx:id="txtSearch" layoutX="764.0" layoutY="385.0" prefWidth="725.0" promptText="Description">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </JFXTextField>
+   <Label layoutX="764.0" layoutY="355.0" prefWidth="725.0" text="Search">
+      <font>
+         <Font name="Aharoni Bold" size="24.0" />
+      </font>
+   </Label>
+   <TableView fx:id="tblPayment" layoutX="21.0" layoutY="443.0" prefHeight="532.0" prefWidth="1468.0">
+      <columns>
+         <TableColumn fx:id="colPID" prefWidth="100.0" resizable="false" text="PID" />
+         <TableColumn fx:id="colDate" prefWidth="200.0" resizable="false" text="Date" />
+         <TableColumn fx:id="colDesc" prefWidth="874.0" resizable="false" text="Description" />
+         <TableColumn fx:id="colCost" prefWidth="293.0" resizable="false" text="Cost" />
+      </columns>
+   </TableView>
+   <Label fx:id="lblPID" layoutX="120.0" layoutY="88.0" prefHeight="30.0" prefWidth="200.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblCost" layoutX="764.0" layoutY="258.0" prefWidth="725.0" textFill="RED" />
+</AnchorPane>

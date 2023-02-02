@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="top_pane_background_color" stylesheets="@../assets/css/CSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.salon.controller.MenuReceptionFormController">
+   <AnchorPane fx:id="pane" layoutX="414.0" prefHeight="1080.0" prefWidth="1507.0" styleClass="top_pane_background_color" stylesheets="@../assets/css/CSS.css">
+      <children>
+         <ImageView fitHeight="461.0" fitWidth="373.0" layoutX="599.0" layoutY="199.0" nodeOrientation="INHERIT" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+            <effect>
+               <Reflection />
+            </effect>
+            <cursor>
+               <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <image>
+               <Image url="@../assets/images/0f628166340c24fca9328c45b866adfc.jpg" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+   <Label alignment="CENTER" layoutX="14.0" layoutY="20.0" prefHeight="54.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="Menu">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="603.0" onAction="#manageCustomerOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Customers" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="427.0" onAction="#manageAppointmentOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Appointments" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="691.0" onAction="#manageCustomerOrderOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Orders" textFill="WHITE">
+      <font>
+         <Font size="36.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <Label layoutX="1662.0" layoutY="1049.0" text="© 2022 THINUX - All Rights Reserved" />
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/clock.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/customers.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="700.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/order.png" />
+      </image>
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#dashboardOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Dashboard" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/home.png" />
+      </image>
+   </ImageView>
+   <JFXButton alignment="BOTTOM_LEFT" buttonType="RAISED" layoutX="14.0" layoutY="515.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#manageServiceOrderOnAction" prefHeight="50.0" prefWidth="400.0" stylesheets="@../assets/css/CSS.css" text="     Service Order" textFill="WHITE">
+      <font>
+         <Font name="Aharoni Bold" size="36.0" />
+      </font>
+      <styleClass>
+         <String fx:value="tab_button" />
+         <String fx:value="left_tab_border" />
+      </styleClass>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/icons/barber-chair.png" />
+      </image>
+   </ImageView>
+   <Label alignment="CENTER" layoutX="795.0" layoutY="168.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Salon Sudarma" textAlignment="CENTER" textFill="#331e36">
+      <font>
+         <Font name="Copperplate Gothic Light" size="96.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="795.0" layoutY="74.0" prefHeight="120.0" prefWidth="867.0" stylesheets="@../assets/css/CSS.css" text="Welcome to " textAlignment="CENTER" textFill="#331e36">
+      <font>
+         <Font name="Copperplate Gothic Light" size="48.0" />
+      </font>
+   </Label>
+   <JFXButton buttonType="RAISED" layoutX="1806.0" layoutY="14.0" onAction="#logoutOnAction" prefHeight="40.0" prefWidth="100.0" styleClass="dark_button" stylesheets="@../assets/css/CSS.css" text="Logout" textFill="WHITE">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></JFXButton>
+</AnchorPane>
